@@ -1,24 +1,23 @@
-#!/usr/bin/env python3
-"""Supercon_Pred CLI - 超导材料超导转变温度(Tc)预测工具。
+"""Supercon_Pred CLI - Superconducting transition temperature (Tc) prediction tool.
 
-用法:
-    # 从化合物列表生成特征
+Usage:
+    # Generate features from compound list
     python main.py features <input_csv> [-o output.csv] [--tc-col Tc]
 
-    # 训练模型（RF / GB / GPR）
+    # Train models (RF / GB / GPR)
     python main.py train <feature_csv> [--models RF,GB,GPR] [--predict data.csv]
 
-    # 使用已训练模型预测 Tc
+    # Predict Tc using trained model
     python main.py predict <feature_csv> --model RandomForest [-o result.csv]
 """
 import argparse
 import pandas as pd
-from . import config
-from .utils import ensure_dir
-from .features.generator import FeatureGenerator
-from .training.models import ModelTrainer
-from .training.evaluator import Evaluator
-from .prediction.predictor import Predictor
+import config
+from utils import ensure_dir
+from features.generator import FeatureGenerator
+from training.models import ModelTrainer
+from training.evaluator import Evaluator
+from prediction.predictor import Predictor
 
 
 def cmd_features(args):

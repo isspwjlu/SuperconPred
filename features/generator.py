@@ -3,7 +3,7 @@ import os
 import numpy as np
 import pandas as pd
 from chemlib import Element
-from ..utils import ensure_dir
+from utils import ensure_dir
 from .atoms import Atoms
 
 

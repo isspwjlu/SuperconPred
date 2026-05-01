@@ -5,8 +5,8 @@ import pickle
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
-from .. import config
-from ..utils import ensure_dir
+import config
+from utils import ensure_dir
 
 
 class Predictor:

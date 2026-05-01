@@ -8,8 +8,8 @@ import seaborn as sns
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 from sklearn.inspection import permutation_importance
 
-from .. import config
-from ..utils import ensure_dir
+import config
+from utils import ensure_dir
 
 
 class Evaluator:

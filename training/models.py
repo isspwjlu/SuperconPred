@@ -10,8 +10,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from skopt import BayesSearchCV
 
-from .. import config
-from ..utils import ensure_dir
+import config
+from utils import ensure_dir
 
 
 class ModelTrainer:
