@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+
+# Output files (models, figures, results)
+Supercon_Pred/outputs/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+venv/
+.venv/
